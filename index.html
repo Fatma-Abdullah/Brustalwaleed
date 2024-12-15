@@ -19,16 +19,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.min.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-  <script src="
-  https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.all.min.js
-  "></script>
-  <link href="
-  https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.min.css
-  " rel="stylesheet">
 
 </head>
 
@@ -67,7 +66,6 @@
                 </div>
                 <div class="mt-5 d-flex justify-content-around align-items-center">
                   <h5 class="card-title">
-
                     <button onclick="callAction()">
                       <a class="emoji">
 
@@ -96,86 +94,99 @@
     </section>
 
     <!-- end review section -->
+  </div>
 
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 footer-col">
+          <h4>
+            تابعنا
+          </h4>
+          <div class="footer_social">
 
+            <a href="https://www.instagram.com/brustalwaleed/profilecard/?igsh=eGl2eXJ2eXIzcjRr">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
 
-    <!-- footer section -->
-    <footer class="footer_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 footer-col">
-            <h4>
-              تابعنا
-            </h4>
-            <div class="footer_social">
-
-              <a href="https://www.instagram.com/brustalwaleed/profilecard/?igsh=eGl2eXJ2eXIzcjRr">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-              </a>
-
-              <a href="https://www.tiktok.com/@brust.alwaleed?_t=8s8bvrRclyT&_r=1">
-                <i class="fab fa-tiktok fa-2x"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6 footer-col">
-            <div class="footer_contact">
-              <h4>
-                تواصل معنا
-              </h4>
-
-              <div class="contact_link_box">
-                <a href="tel:+966570693312">
-                  <span>
-                    0570693312
-                  </span>
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-
-                </a>
-                <a href="mailto:burusatalwalid@gmail.com">
-                  <span>
-                    burusatalwalid@gmail.com
-                  </span>
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-
-                </a>
-              </div>
-            </div>
+            <a href="https://www.tiktok.com/@brust.alwaleed?_t=8s8bvrRclyT&_r=1">
+              <i class="fab fa-tiktok fa-2x"></i>
+            </a>
           </div>
         </div>
-        <div class="footer-info">
-          <p>
-            جميع الحقوق محفوظة
+        <div class="col-md-6 footer-col">
+          <div class="footer_contact">
+            <h4>
+              تواصل معنا
+            </h4>
 
-            &copy;
+            <div class="contact_link_box">
+              <a href="tel:+966570693312">
+                <span>
+                  0570693312
+                </span>
+                <i class="fa fa-phone" aria-hidden="true"></i>
 
-            <a href="https://api.whatsapp.com/send/?phone=%2B966575744139&text&type=phone_number&app_absent=0">برو
-              ديجتال</a>
-          </p>
+              </a>
+              <a href="mailto:burusatalwalid@gmail.com">
+                <span>
+                  burusatalwalid@gmail.com
+                </span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- footer section -->
+      <div class="footer-info">
+        <p>
+          جميع الحقوق محفوظة
 
-    <script>
-      function callAction() {
-        Swal.fire({
-          title: "نعتذر منك بعدم رضاك عن الخدمة المقدمة ",
-          icon: "info",
-          showCloseButton: true,
-          showCancelButton: true,
-          focusConfirm: false,
-          confirmButtonText: `
-    <a class="whatsappBtn" href="https://api.whatsapp.com/send/?phone=%2B966570693312&text&type=phone_number&app_absent=0"> <i class="fab fa-whatsapp "></i> تواصل معنا على الواتساب </a>
-  `,
-          confirmButtonAriaLabel: "Thumbs up, great!",
-          cancelButtonText: `اغلاق
-  `,
-          cancelButtonAriaLabel: "Thumbs down"
-        });
-      }
+          &copy;
 
-    </script>
+          <a href="https://api.whatsapp.com/send/?phone=%2B966575744139&text&type=phone_number&app_absent=0">برو
+            ديجتال</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+  <script>
+    function callAction() {
+      Swal.fire({
+        title: "",
+        html: `<p class="alertEmoji">😕</p>
+        نعتذر منك بعدم رضاك عن الخدمة المقدمة 
+        `,
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        showClass: {
+    popup: `
+      animate__animated
+      animate__fadeInUp
+animate__fast   `
+  },
+  hideClass: {
+    popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    `
+  },
+        confirmButtonText: `
+  <a class="whatsappBtn" href="https://api.whatsapp.com/send/?phone=%2B966570693312&text&type=phone_number&app_absent=0"> <i class="fab fa-whatsapp "></i> تواصل معنا على الواتساب </a>
+`,
+        confirmButtonAriaLabel: "Thumbs up, great!",
+        cancelButtonText: `اغلاق
+`,
+        cancelButtonAriaLabel: "Thumbs down"
+      });
+    }
+
+  </script>
 </body>
 
 </html>
