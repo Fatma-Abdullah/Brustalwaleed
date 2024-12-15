@@ -23,7 +23,13 @@
 
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <script src="
+  https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.all.min.js
+  "></script>
+  <link href="
+  https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.min.css
+  " rel="stylesheet">
+  
 </head>
 
 <body>
@@ -61,13 +67,15 @@
                 </div>
                 <div class="mt-5 d-flex justify-content-around align-items-center">
                   <h5 class="card-title">
-                    <a class="emoji"
-                      href="https://api.whatsapp.com/send/?phone=%2B966570693312&text&type=phone_number&app_absent=0">
+                   
+                  <button onclick="callAction()">
+                    <a class="emoji">
 
-                      <span> 😕</span>
-                      <br> 
-                     <p> غير راضي</p>
-                    </a>
+                    <span> 😕</span>
+                    <br> 
+                   <p> غير راضي</p>
+                  </a>
+                  </button>
                   </h5>
 
                   <h5 class="card-title">
@@ -85,10 +93,11 @@
         </div>
       </div>
     </section>
-
+   
     <!-- end review section -->
-  </div>
 
+
+    
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
@@ -146,6 +155,25 @@
   </footer>
   <!-- footer section -->
 
+  <script>
+    function callAction(){
+       Swal.fire({
+  title: "نعتذر منك بعدم رضاك عن الخدمة المقدمة ",
+  icon: "info",
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText: `
+    <a class="whatsappBtn" href="https://api.whatsapp.com/send/?phone=%2B966570693312&text&type=phone_number&app_absent=0"> <i class="fab fa-whatsapp "></i> تواصل معنا على الواتساب </a>
+  `,
+  confirmButtonAriaLabel: "Thumbs up, great!",
+  cancelButtonText: `اغلاق
+  `,
+  cancelButtonAriaLabel: "Thumbs down"
+});
+    }
+   
+  </script>
 </body>
 
 </html>
