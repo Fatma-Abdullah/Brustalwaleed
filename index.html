@@ -29,7 +29,7 @@
   <link href="
   https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.min.css
   " rel="stylesheet">
-  
+
 </head>
 
 <body>
@@ -67,22 +67,23 @@
                 </div>
                 <div class="mt-5 d-flex justify-content-around align-items-center">
                   <h5 class="card-title">
-                   
-                  <button onclick="callAction()">
-                    <a class="emoji">
 
-                    <span> 😕</span>
-                    <br> 
-                   <p> غير راضي</p>
-                  </a>
-                  </button>
+                    <button onclick="callAction()">
+                      <a class="emoji">
+
+                        <span> 😕</span>
+                        <br>
+                        <p> غير راضي</p>
+                      </a>
+                    </button>
                   </h5>
 
                   <h5 class="card-title">
                     <a class="emoji" href="https://g.page/r/CS9w2Pus42ntEBM/review">
                       <span> 😍</span>
-                      <br> 
-                    <p>راضي </p></a>
+                      <br>
+                      <p>راضي </p>
+                    </a>
                   </h5>
 
                 </div>
@@ -93,87 +94,88 @@
         </div>
       </div>
     </section>
-   
+
     <!-- end review section -->
 
 
-    
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 footer-col">
-          <h4>
-            تابعنا
-          </h4>
-          <div class="footer_social">
 
-            <a href="https://www.instagram.com/brustalwaleed/profilecard/?igsh=eGl2eXJ2eXIzcjRr">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-
-            <a href="https://www.tiktok.com/@brust.alwaleed?_t=8s8bvrRclyT&_r=1">
-              <i class="fab fa-tiktok fa-2x"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 footer-col">
-          <div class="footer_contact">
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer-col">
             <h4>
-              تواصل معنا
+              تابعنا
             </h4>
-            
-            <div class="contact_link_box">
-              <a href="tel:+966570693312">
-                <span>
-                  0570693312
-                </span>
-                <i class="fa fa-phone" aria-hidden="true"></i>
+            <div class="footer_social">
 
+              <a href="https://www.instagram.com/brustalwaleed/profilecard/?igsh=eGl2eXJ2eXIzcjRr">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="mailto:burusatalwalid@gmail.com">
-                <span>
-                  burusatalwalid@gmail.com
-                </span>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
 
+              <a href="https://www.tiktok.com/@brust.alwaleed?_t=8s8bvrRclyT&_r=1">
+                <i class="fab fa-tiktok fa-2x"></i>
               </a>
             </div>
           </div>
+          <div class="col-md-6 footer-col">
+            <div class="footer_contact">
+              <h4>
+                تواصل معنا
+              </h4>
+
+              <div class="contact_link_box">
+                <a href="tel:+966570693312">
+                  <span>
+                    0570693312
+                  </span>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+
+                </a>
+                <a href="mailto:burusatalwalid@gmail.com">
+                  <span>
+                    burusatalwalid@gmail.com
+                  </span>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            جميع الحقوق محفوظة
+
+            &copy;
+
+            <a href="https://api.whatsapp.com/send/?phone=%2B966575744139&text&type=phone_number&app_absent=0">برو
+              ديجتال</a>
+          </p>
         </div>
       </div>
-      <div class="footer-info">
-        <p>
-          جميع الحقوق محفوظة
+    </footer>
+    <!-- footer section -->
 
-          &copy; 
-        
-        <a href="https://api.whatsapp.com/send/?phone=%2B966575744139&text&type=phone_number&app_absent=0">برو ديجتال</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <!-- footer section -->
-
-  <script>
-    function callAction(){
-       Swal.fire({
-  title: "نعتذر منك بعدم رضاك عن الخدمة المقدمة ",
-  icon: "info",
-  showCloseButton: true,
-  showCancelButton: true,
-  focusConfirm: false,
-  confirmButtonText: `
+    <script>
+      function callAction() {
+        Swal.fire({
+          title: "نعتذر منك بعدم رضاك عن الخدمة المقدمة ",
+          icon: "info",
+          showCloseButton: true,
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: `
     <a class="whatsappBtn" href="https://api.whatsapp.com/send/?phone=%2B966570693312&text&type=phone_number&app_absent=0"> <i class="fab fa-whatsapp "></i> تواصل معنا على الواتساب </a>
   `,
-  confirmButtonAriaLabel: "Thumbs up, great!",
-  cancelButtonText: `اغلاق
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: `اغلاق
   `,
-  cancelButtonAriaLabel: "Thumbs down"
-});
-    }
-   
-  </script>
+          cancelButtonAriaLabel: "Thumbs down"
+        });
+      }
+
+    </script>
 </body>
 
 </html>

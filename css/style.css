@@ -1118,6 +1118,7 @@ h2,
 button, button:focus , button:active {
   background: none ;
   border: none;
+  outline: none !important;
 }button.swal2-confirm.swal2-styled {
   margin: 0;
   padding: 0;
